@@ -1,21 +1,28 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
  */
-
 int main(void)
-
 {
-	int a;
+	int n;
 
-	for (a = 48; a < 58 ; a++)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	printf("%d ", n);
+	if (n > 0)
 	{
-		putchar(a);
+		printf("is positive\n");
 	}
-	putchar('\n');
+	else if (n == 0)
+	{
+		printf("is zero\n");
+	}
+	else
+	{
+		printf("is negative\n");
+	}
 	return (0);
 }                                                                                                               
