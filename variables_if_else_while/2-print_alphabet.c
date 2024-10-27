@@ -1,14 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char alphabet = 'a';
 
-int main(void) {
-    char letter;
-
-    for (letter = 'a'; letter <= 'z'; letter++) {
-        putchar(letter);
-    }
-    
-    putchar('\n'); // Print a new line
-
-    return 0;
+	while (alphabet <= 'z')
+	{
+		putchar(alphabet);
+		alphabet++;
+	}
+	putchar('\n');
+	return (0);
 }
-
