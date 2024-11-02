@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 
-/* isupper function checks if char is upper or not */
+/**
+ * isupper function checks if char is upper or not 
+ */
 
 int _isupper(int c)
 {
