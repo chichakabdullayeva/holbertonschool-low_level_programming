@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include "main.h"
-int main (void) {
-int c;
-if (c >= 0 && c <= 9)
-{
-return (1);
+
+int main(void) {
+int c = 0; 
+/* Initialize c to a default value*/
+/* Your code logic here, perhaps updating c based on user input*/
+if (c >= 0 && c <= 9) {
+/* Do something*/
 }
-else
-{
-return (0);
-}
+return 0;
 }
