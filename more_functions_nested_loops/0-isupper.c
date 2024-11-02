@@ -4,7 +4,6 @@
 /**
  * isupper function checks if char is upper or not 
  */
-
 int _isupper(int c)
 {
 if (c >= 'A' && c <= 'Z')
