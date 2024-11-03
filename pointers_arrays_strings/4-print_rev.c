@@ -7,7 +7,6 @@
  *
  * Return: just a return
  */
-
 void print_rev(char *s)
 {
 	int i = 0;
