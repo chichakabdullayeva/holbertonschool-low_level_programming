@@ -16,7 +16,7 @@ while (*(s + i) != '\0')
 {
 i++;
 }
-i--; 
+i--;
 /* Adjust for zero-based index */
 /* Print the string in reverse */
 while (i >= 0)
@@ -26,4 +26,3 @@ i--;
 }
 _putchar('\n');
 }
-
