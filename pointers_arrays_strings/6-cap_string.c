@@ -5,12 +5,12 @@
  * @str: Pointer to the string to be capitalized.
  *
  * Description: This function scans the input string and capitalizes
- *              the first letter of each word. Words are defined as 
+ *              the first letter of each word. Words are defined as
  *              sequences of characters separated by spaces, tabs,
  *              new lines, or specific punctuation characters.
  *
  *              The separators include: space, tabulation, new line,
- *              comma, semicolon, period, exclamation mark, question 
+ *              comma, semicolon, period, exclamation mark, question
  *              mark, double quote, parentheses, and curly braces.
  *
  * Return: A pointer to the modified string (str).
