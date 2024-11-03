@@ -6,6 +6,7 @@
  * @str: pointer
  * Return: Always 0
  */
+int _putchar(char c);
 void puts2(char *str)
 {
 int a = 0;
