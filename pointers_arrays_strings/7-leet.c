@@ -30,5 +30,5 @@ str[i] = leet[j];      /* Replace with corresponding leet character */
 }
 }
 }
-return str;  /* Return the pointer to the modified string */
+return (str);  /* Return the pointer to the modified string */
 }
