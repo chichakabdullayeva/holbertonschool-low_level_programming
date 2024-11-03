@@ -22,3 +22,5 @@ s2++;  /* Move to the next character in s2 */
 }
 /* If we reach here, at least one string has ended */
 return (*s1 - *s2);  /* Return the difference of the terminating characters */
+}
+/* Make sure to add this closing brace */
