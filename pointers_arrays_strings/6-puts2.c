@@ -18,21 +18,19 @@ int _putchar(char c);
  */
 void puts2(char *str)
 {
-    int a = 0;
-    int l;
-
-    /* Count the length of the string */
-    while (*(str + a) != '\0')
-    {
-        a++;
-    }
-    l = a;
-
-    /* Print every other character */
-    for (a = 0; a < l; a += 2)
-    {
-        _putchar(*(str + a));
-    }
-    _putchar('\n');
+int a = 0;
+int l;
+/* Count the length of the string */
+while (*(str + a) != '\0')
+{
+a++;
+}
+l = a;
+/* Print every other character */
+for (a = 0; a < l; a += 2)
+{
+_putchar(*(str + a));
+}
+_putchar('\n');
 }
 
