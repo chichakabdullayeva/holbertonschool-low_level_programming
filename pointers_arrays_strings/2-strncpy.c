@@ -16,10 +16,10 @@ int i;
 for (i = 0; i < n && src[i] != '\0'; i++)
 {
 dest[i] = src[i];  /* Copy character from src to dest */
-}    
+}
 for (; i < n; i++)
 {
 dest[i] = '\0';  /* Fill remaining dest with null bytes */
 }
-return dest;  /* Return pointer to the destination string */
+return (dest);  /* Return pointer to the destination string */
 }
