@@ -1,30 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strchr - Locates a character in a string.
- * @s: The string to search.
- * @c: The character to locate.
+ * _strncpy - Copies up to n characters from the string src to dest.
+ * @dest: The destination string where the content is to be copied.
+ * @src: The source string from which to copy.
+ * @n: The maximum number of characters to copy from src.
  *
- * Return: A pointer to the first occurrence of the character
- *         in the string, or NULL if the character is not found.
+ * Return: A pointer to the destination string dest.
+ *         If the length of src is less than n, the remaining characters
+ *         in dest will be filled with null bytes.
  */
-char *_strncat(char *dest, char *src, int n);
-char *_strchr(char *s, char c)
+char *_strncpy(char *dest, char *src, int n)
 {
-int i = 0;
-/* Iterate through the string */
-while (s[i] != '\0')
-/* Check for end of string */
+int i;
+for (i = 0; i < n && src[i] != '\0'; i++)
 {
-if (s[i] == c)
-/* Check if the current character matches c */
+dest[i] = src[i];  /* Copy character from src to dest */
+}    
+for (; i < n; i++)
 {
-return (s + i);
-/* Return pointer to the found character */
+dest[i] = '\0';  /* Fill remaining dest with null bytes */
 }
-i++;
-}
-return (NULL);
-/* Character not found, return NULL */
+return dest;  /* Return pointer to the destination string */
 }
