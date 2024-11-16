@@ -1,21 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>  // For atoi()
-
+#include "main.h"
+#include <stdlib.h>
+int main (int argc, char *argv [])
+{
 /**
- * main - Multiplies each command-line argument by 2 and prints it
- * @argc: The number of command-line arguments
- * @argv: Array of strings representing the command-line arguments
- * 
- * Return: Always 0 (Success)
+ * main - check the code
+ * @argc: argc
+ * @argv: argv
+ * Return: Always 0.
  */
-int main(int argc, char *argv[])
+if (argc > 2)
 {
-int i;
-/* Loop through each command-line argument */
-for (i = 1; i < argc; i++)
-{
-int num = atoi(argv[i]);  // Convert argument to an integer
-printf("%d\n", num * 2);  // Print the result of multiplying by 2
+printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 }
-return 0;
+else
+{
+printf("Error\n");
+return (1);
+}
+return (0);
 }
