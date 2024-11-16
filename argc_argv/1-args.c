@@ -10,6 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
+(void) argv;
     /* Print the number of command line arguments */
     printf("%d\n", argc);
 
