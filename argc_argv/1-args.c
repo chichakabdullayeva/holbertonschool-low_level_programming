@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 (void) argv;
     /* Print the number of command line arguments */
-    printf("%d\n", argc);
+    printf("%d\n", argc - 1);
 
     return (0);
 }
