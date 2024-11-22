@@ -27,7 +27,7 @@ j++;
 }
 if (n >= j)
 n = j;
-str = malloc(sizeof(char) * (i + n) + 1);
+str = malloc((sizeof(char) * (i + n)) + 1);
 if (str == NULL)
 {
 return (NULL);
