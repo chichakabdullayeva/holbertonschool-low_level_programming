@@ -11,7 +11,7 @@ int *str, i = 0, a;
 if (min > max)
 return (NULL);
 a = max - min;
-str = malloc(a * sizeof(int) + sizeof(int));
+str = malloc(a *sizeof(int) + sizeof(int));
 if (str == NULL)
 return (NULL);
 while (i < a + 1)
