@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * array_range - creates array from mion to max
+ * array_range - creates array from min to max
  * @min: first element of array
  * @max: maximum element of array
  * Return: int array from min to max
