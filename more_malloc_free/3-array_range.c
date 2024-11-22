@@ -7,14 +7,14 @@
  */
 int *array_range(int min, int max)
 {
-int *str, i = 0, a;
+ int *str, i = 0, a;
 if (min > max)
 return (NULL);
-a = max - min;
-str = malloc(a * sizeof(int) + sizeof(int));
+a = max - min + 1;  // +1 to include max value in the range
+str = malloc(a * sizeof(int));  // Allocate memory for 'a' integers
 if (str == NULL)
 return (NULL);
-while (i < a + 1)
+while (i < a)
 {
 *(str + i) = min + i;
 i++;
